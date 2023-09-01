@@ -13,6 +13,7 @@
   - [Estructura de las Ramas](#estructura-de-las-ramas)
     + [Comandos para las Ramas](#comandos-para-las-ramas)
     + [Diagrama de las Ramas](#diagrama-de-las-ramas)
+  - [Comandos](#comandos)
 * [Integrantes](#integrantes)
 * [Estatus](#estatus)
 
@@ -203,6 +204,80 @@ git push origin developer --force
 ## Diagrama de las Ramas
 ![image](https://github.com/devAnt0/devAnt0/assets/142921169/a6d756b1-1c7a-4a3f-a40c-d9895aed6444)
 
+
+## Comandos
+Clonar repositorio.
+```
+git clone https://miurl.git
+```
+
+Validar estado.
+```
+git status
+```
+
+Validar en que rama estamos y las ramas en el repositorio local.
+```
+git branch
+```
+
+Crear rama local en el repositorio.
+```
+git checkout -b nombrerama origin/nombrerama
+```
+
+Pararme en una rama.
+```
+git checkout prefijo/nombrerama
+```
+
+Eliminar una rama.
+```
+git branch -d prefijo/nombrerama
+```
+
+> IMPORTANTE: cuando quiera subir mis cambios al repositorio, debo primero estar puesto en la rama en la cual subiré mi código (VERIFICAR ANTES LA RAMA EN LA QUE SE ESTÁ TRABAJANDO).
+
+Primero debes de: 
+```
+git checkout RamaLocalPeroQueEsLaDelRepo (Developer)
+```
+
+Se ejecutará el comando git add para subir los cambios que están en la rama local
+```
+git add .
+```
+
+Comando para ejecutar la consola con su mensaje.
+```
+git commit
+```
+> Aqui va el comentario (con la tarea, en otro blog de notas se especifica).
+
+Comando para funcionar los cambios de la rama que quieres.
+```
+git merge prefijo/nombrerama (la local, donde trabajó)
+```
+
+Agrega los archivos modificados de la rama local.
+```
+git add .
+``` 
+
+Comentario del merge o fusión.
+```
+git commit -m "Merge fix/bug into developer"
+```
+
+Comando para obtener nueva versión.
+```
+git pull
+```
+
+Sube los cambios a la rama del repositorio.
+```
+git push
+```
 
 ## Integrantes
 Los integrantes del equipo de desarrollo son:
