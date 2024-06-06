@@ -279,6 +279,17 @@ Sube los cambios a la rama del repositorio.
 git push
 ```
 
+## Tags & Releases
+Para crear una nueva tag
+```
+git tag 'tag_name'
+```
+
+PAra crear un nuevo release automático (es necesario incluir release en el nombre para activar el trigger automáticamente)
+```
+git tag 'tag_name'_release
+```
+
 ## Integrantes
 Los integrantes del equipo de desarrollo son:
 * [Juan Esteban Giraldo](https://github.com/YHPSNK99)
