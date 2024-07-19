@@ -55,6 +55,33 @@ La estrategia elegida para el versionamiento de las aplicaciones es la **Numerac
 
 Además, se pretende que cada versión tenga su propia **etiqueta o tag** en el repositorio, para tener un control de versiones ordenado, que permita correctamente rastrear versiones específicas del código.
 
+## Publicacion de nuevas versiones
+Para publicar una nueva versión del aplicativo que se necesite:
+
+### Version de Prueba
+Para publicar una nueva versión de pruebas inicialmente se debe seguir los siguientes pasos:
+- Se debe estar en la rama 'developer' del proyecto a la que se quiere subir la versión.
+```
+git checkout developer
+```
+> En caso de que exista la rama, sino puedes crearlo con el siguiente comando:
+```
+git checkout -b origin/developer
+```
+- Luego, se seguirán los pasos que se siguen normalmente para subir un cambio, con el cambio de añadir un título al commit, en este caso 'beta'.
+```
+git commit -m "beta" -m "Commit del cambio"
+```
+### Version Publicación
+Para publicar una nueva versión para publicar inicialmente se debe seguir los siguientes pasos:
+- Se debe estar en la rama 'main' del proyecto a la que se quiere subir la versión.
+```
+git checkout main
+```
+- Luego, se seguirán los pasos que se siguen normalmente para subir un cambio, con el cambio de añadir un título al commit, en este caso 'release'.
+```
+git commit -m "release" -m "Commit del cambio"
+```
 
 ## Comandos de Git
 Los comandos normales para subir un cambio a un repositorio es:
