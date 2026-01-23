@@ -26,7 +26,7 @@ Los proyectos que se desarrollan para la empresa Pocicarnes, se almacenan con es
 Para consultar los comandos básicos de Git haga [click aquí](https://gist.github.com/dasdo/9ff71c5c0efa037441b6).
 
 
-## Clonar el Repositorio desde Azure DevOps
+### Clonar el Repositorio desde Azure DevOps
 Para clonar un repositorio desde Azure DevOps, se deberán seguir los siguientes pasos:
 * Dar click en el botón **Clone** y seleccionar en **Command Line** la opción **HTTPS** y copiar la URL.
 * En el computador abrir la carpeta dónde se almacenará el proyecto, abrir la terminal o el Git Bash y clonar el repositorio con la URL del repositorio:
